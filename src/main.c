@@ -1,22 +1,17 @@
 #include <stdio.h>
-#include <string.h>
-#include "modulo_principal.h"
+#include "menus.h"
 
 int main(int argc, char *argv[]) {
-    if (argc < 2) {
-        printf("Uso: %s <opções>\n", argv[0]);
-        printf("Use -ajuda para detalhes de uso.\n");
-        return 1;
+    if (argc > 1) {
+        if (strcmp(argv[1], "-ajuda") == 0) {
+            printf("Uso do programa:\n");
+            printf("./meu_programa [-ajuda] [-tab] [-bin]\n");
+            return 0;
+        }
     }
 
-    if (strcmp(argv[1], "-ajuda") == 0) {
-        printf("Opções disponíveis:\n");
-        printf("  -ajuda: Exibe esta mensagem.\n");
-        printf("  -tab: Processar ficheiro separado por tabs.\n");
-        printf("  -bin: Processar ficheiro binário.\n");
-        return 0;
-    }
+    // Chama o menu principal
+    exibirMenuPrincipal();
 
-    processar_entrada();  // Função do módulo principal
     return 0;
 }

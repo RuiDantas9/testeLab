@@ -1,6 +1,8 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-void mostrar_mensagem(const char *mensagem);
+void carregarFuncionarios(const char *filename);
+void carregarEmentas(const char *filename);
+void carregarEscolhas(const char *filename);
 
 #endif

@@ -4,7 +4,7 @@ project(TrabalhoLab C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(TrabalhoLab src/main.c
-        src/modulo_principal.c
-        src/modulo_principal.h
+        src/menus.c
+        src/menus.h
         src/utils.c
         src/utils.h)
