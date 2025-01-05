@@ -1,0 +1,11 @@
+# Ignorar ficheiros de compilação
+cmake-build-debug/
+*.o
+*.out
+
+# Ignorar ficheiros temporários
+*.tmp
+*.swp
+
+# Ignorar ficheiros do CLion
+.idea/
